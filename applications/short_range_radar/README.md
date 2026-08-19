@@ -26,7 +26,7 @@ python short_range_radar_GUI.py
 [`python/`](python) contains the standalone scripts
 (`short_range_radar_USB.py`, `short_range_radar_single_UART.py`): edit the
 port names at the top of the file and run. These scripts predate the shared
-[urad-mmwave](https://github.com/<org>/urad-mmwave-core) SDK and will be
+[urad-mmwave](https://github.com/urad-by-Anteral/urad-mmwave-core) SDK and will be
 migrated to it in a future release.
 
 ## Documentation

@@ -6,7 +6,7 @@ are not stored in the git history.
 
 | Binary | Application | Notes |
 |---|---|---|
-| `out_of_box_1843_isk.bin` | Out-of-box demo & Short Range Radar | Point cloud streaming; used with [urad-mmwave](https://github.com/<org>/urad-mmwave-core) |
+| `out_of_box_1843_isk.bin` | Out-of-box demo & Short Range Radar | Point cloud streaming; used with [urad-mmwave](https://github.com/urad-by-Anteral/urad-mmwave-core) |
 
 ## Flashing
 

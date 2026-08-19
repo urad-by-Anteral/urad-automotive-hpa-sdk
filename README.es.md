@@ -19,10 +19,10 @@ Instruments (ISK, antena de altas prestaciones).
 
 1. Flashea el firmware out-of-box (`out_of_box_1843_isk.bin`, en
    [Releases](../../releases)) — véase [`firmware/README.md`](firmware/README.md).
-2. Instala el SDK Python [urad-mmwave](https://github.com/<org>/urad-mmwave-core):
+2. Instala el SDK Python [urad-mmwave](https://github.com/urad-by-Anteral/urad-mmwave-core):
 
    ```bash
-   pip install git+https://github.com/<org>/urad-mmwave-core.git
+   pip install git+https://github.com/urad-by-Anteral/urad-mmwave-core.git
    ```
 
 3. Ejecuta la demo con el perfil de este producto (identifica antes tus
@@ -34,7 +34,7 @@ Instruments (ISK, antena de altas prestaciones).
 
    Añade `--gui` para el visor de nube de puntos en tiempo real. La
    referencia completa de configuración está en el README de
-   [urad-mmwave-core](https://github.com/<org>/urad-mmwave-core).
+   [urad-mmwave-core](https://github.com/urad-by-Anteral/urad-mmwave-core).
 
 ## Aplicaciones
 

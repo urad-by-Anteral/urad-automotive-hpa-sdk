@@ -19,11 +19,11 @@ Anteral** — a 77 GHz mmWave evaluation board based on the Texas Instruments
 
 1. Flash the out-of-box firmware (`out_of_box_1843_isk.bin` from
    [Releases](../../releases)) — see [`firmware/README.md`](firmware/README.md).
-2. Install the [urad-mmwave](https://github.com/<org>/urad-mmwave-core) Python
+2. Install the [urad-mmwave](https://github.com/urad-by-Anteral/urad-mmwave-core) Python
    SDK:
 
    ```bash
-   pip install git+https://github.com/<org>/urad-mmwave-core.git
+   pip install git+https://github.com/urad-by-Anteral/urad-mmwave-core.git
    ```
 
 3. Run the demo with this product's profile (identify your COM ports first):
@@ -34,7 +34,7 @@ Anteral** — a 77 GHz mmWave evaluation board based on the Texas Instruments
 
    Add `--gui` for the live point cloud viewer. The full configuration
    reference and troubleshooting live in the
-   [urad-mmwave-core](https://github.com/<org>/urad-mmwave-core) README.
+   [urad-mmwave-core](https://github.com/urad-by-Anteral/urad-mmwave-core) README.
 
 ## Applications
 
