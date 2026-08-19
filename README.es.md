@@ -48,7 +48,7 @@ reproducción). Funciona sobre el mismo firmware out-of-box. Véase
 
 La documentación de TI que antes acompañaba a este SDK está disponible en TI:
 la guía del [mmWave SDK](https://www.ti.com/tool/MMWAVE-SDK) y el
-[TI Resource Explorer](https://dev.ti.com/tir/).
+[TI Resource Explorer](https://dev.ti.com).
 
 ## Licencia
 

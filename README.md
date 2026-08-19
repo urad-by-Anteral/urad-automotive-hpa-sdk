@@ -49,7 +49,7 @@ included). Runs on the same out-of-box firmware. See
 The TI documentation previously bundled with this SDK is available from TI:
 the [mmWave SDK](https://www.ti.com/tool/MMWAVE-SDK) user guide (including
 the out-of-box demo UART data format) and the
-[TI Resource Explorer](https://dev.ti.com/tir/).
+[TI Resource Explorer](https://dev.ti.com).
 
 ## License
 
