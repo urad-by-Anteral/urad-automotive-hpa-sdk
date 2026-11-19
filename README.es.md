@@ -13,7 +13,7 @@ Instruments (ISK, antena de altas prestaciones).
 | [`docs/`](docs) | Manual de usuario y guía del adaptador para Raspberry Pi (EN/ES) |
 | [`mechanical/`](mechanical) | Modelo 3D de la placa (STEP) |
 | [`firmware/`](firmware) | Guía de flasheo; los binarios están en [Releases](../../releases) |
-| [`applications/`](applications) | Aplicaciones del producto (short range radar) |
+| [`applications/`](applications) | Aplicaciones del producto (short range radar, medium range radar) |
 
 ## Inicio rápido (demo out-of-box)
 
@@ -51,6 +51,20 @@ urad-short-range-radar --config applications/short_range_radar/config_radar.json
 ```
 
 Véase [`applications/short_range_radar/`](applications/short_range_radar).
+
+### Medium Range Radar
+
+El firmware Medium Range Radar de TI en el HPA: cada frame alterna una
+subtrama de largo alcance (hasta ~120 m, los tres TX en beamforming, objetos
+seguidos) y otra de muy corto alcance (hasta ~30 m, nube de puntos MIMO con
+3 TX, clusters y borde de ayuda al aparcamiento). Graba `xwr18xx_mrr_demo.bin`
+desde las Releases y ejecuta el cliente `urad-mrr` de urad-mmwave:
+
+```bash
+urad-mrr --config applications/medium_range_radar/config_radar.json --gui
+```
+
+Véase [`applications/medium_range_radar/`](applications/medium_range_radar).
 
 ## Recursos de Texas Instruments
 
