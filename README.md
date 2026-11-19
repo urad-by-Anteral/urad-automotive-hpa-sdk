@@ -40,9 +40,17 @@ Anteral** — a 77 GHz mmWave evaluation board based on the Texas Instruments
 
 ### Short Range Radar
 
-Zone-based object detection with a desktop GUI (record and playback
-included). Runs on the same out-of-box firmware. See
-[`applications/short_range_radar/`](applications/short_range_radar).
+Zone-based object detection: the point cloud is accumulated on a grid of
+1 m rings by 30° sectors and a zone raises an alarm after several
+consecutive hits. Runs on the same out-of-box firmware, with the
+`urad-short-range-radar` client of urad-mmwave (live view with `--gui`,
+replay of recordings with `--replay`):
+
+```bash
+urad-short-range-radar --config applications/short_range_radar/config_radar.json --gui
+```
+
+See [`applications/short_range_radar/`](applications/short_range_radar).
 
 ## Texas Instruments resources
 
