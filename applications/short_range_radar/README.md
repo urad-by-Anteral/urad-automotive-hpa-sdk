@@ -134,7 +134,7 @@ to [`chirp_config/short_range_radar.cfg`](chirp_config/short_range_radar.cfg),
 a regular out-of-box configuration: start frequency 77 GHz, slope
 20 MHz/µs, 384 samples per chirp at 2 Msps (≈ 4 cm range resolution),
 1 Tx × 4 Rx, 32 chirps per frame, frame period 33.33 ms (30 fps), Doppler
-window ±4.68 m/s and static clutter removal disabled.
+window ±4.55 m/s and static clutter removal disabled.
 
 Before sending it, `urad-short-range-radar` rewrites two lines from the
 command line options, so the firmware only reports points inside the
