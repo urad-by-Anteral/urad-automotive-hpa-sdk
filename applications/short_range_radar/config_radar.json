@@ -9,5 +9,5 @@
         "baudrate": 921600,
         "timeout": 0.3
     },
-    "chirp_config_path": "./chirp_config/short_range_radar.cfg"
+    "chirp_config_path": "./chirp_config/short_range_radar_2tx.cfg"
 }
