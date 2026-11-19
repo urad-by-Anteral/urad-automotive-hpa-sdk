@@ -13,7 +13,7 @@ Anteral** — a 77 GHz mmWave evaluation board based on the Texas Instruments
 | [`docs/`](docs) | User manual and Raspberry Pi adapter guide (EN/ES) |
 | [`mechanical/`](mechanical) | 3D model of the board (STEP) |
 | [`firmware/`](firmware) | Firmware flashing guide; binaries are in [Releases](../../releases) |
-| [`applications/`](applications) | Product applications (short range radar) |
+| [`applications/`](applications) | Product applications (short range radar, medium range radar) |
 
 ## Quick start (out-of-box demo)
 
@@ -51,6 +51,20 @@ urad-short-range-radar --config applications/short_range_radar/config_radar.json
 ```
 
 See [`applications/short_range_radar/`](applications/short_range_radar).
+
+### Medium Range Radar
+
+The TI Medium Range Radar firmware on the HPA: one frame alternates a long
+range subframe (up to ~120 m, three TX beamforming, tracked objects) and an
+ultra short range subframe (up to ~30 m, 3-TX MIMO point cloud, clusters and
+parking assist border). Flash `xwr18xx_mrr_demo.bin` from the Releases and
+run the `urad-mrr` client of urad-mmwave:
+
+```bash
+urad-mrr --config applications/medium_range_radar/config_radar.json --gui
+```
+
+See [`applications/medium_range_radar/`](applications/medium_range_radar).
 
 ## Texas Instruments resources
 
