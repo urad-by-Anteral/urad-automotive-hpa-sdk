@@ -40,9 +40,17 @@ Instruments (ISK, antena de altas prestaciones).
 
 ### Short Range Radar
 
-Detección de objetos por zonas con GUI de escritorio (incluye grabación y
-reproducción). Funciona sobre el mismo firmware out-of-box. Véase
-[`applications/short_range_radar/`](applications/short_range_radar).
+Detección de objetos por zonas: la nube de puntos se acumula en una
+rejilla de anillos de 1 m por sectores de 30° y una zona da la alarma tras
+varias detecciones consecutivas. Funciona sobre el mismo firmware
+out-of-box, con el cliente `urad-short-range-radar` de urad-mmwave (vista
+en tiempo real con `--gui` y reproducción de grabaciones con `--replay`):
+
+```bash
+urad-short-range-radar --config applications/short_range_radar/config_radar.json --gui
+```
+
+Véase [`applications/short_range_radar/`](applications/short_range_radar).
 
 ## Recursos de Texas Instruments
 

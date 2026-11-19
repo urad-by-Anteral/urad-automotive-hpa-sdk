@@ -1,0 +1,13 @@
+{
+    "control_serial": {
+        "port": "COM8",
+        "baudrate": 115200,
+        "timeout": 0.3
+    },
+    "data_serial": {
+        "port": "COM7",
+        "baudrate": 921600,
+        "timeout": 0.3
+    },
+    "chirp_config_path": "./chirp_config/short_range_radar_2tx.cfg"
+}
