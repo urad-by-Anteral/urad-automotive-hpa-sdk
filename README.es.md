@@ -13,7 +13,7 @@ Instruments (ISK, antena de altas prestaciones).
 | [`docs/`](docs) | Manual de usuario y guía del adaptador para Raspberry Pi (EN/ES) |
 | [`mechanical/`](mechanical) | Modelo 3D de la placa (STEP) |
 | [`firmware/`](firmware) | Guía de flasheo; los binarios están en [Releases](../../releases) |
-| [`applications/`](applications) | Aplicaciones del producto (short range radar, medium range radar) |
+| [`applications/`](applications) | Aplicaciones del producto (short range radar, medium range radar, automated parking) |
 
 ## Inicio rápido (demo out-of-box)
 
@@ -65,6 +65,19 @@ urad-mrr --config applications/medium_range_radar/config_radar.json --gui
 ```
 
 Véase [`applications/medium_range_radar/`](applications/medium_range_radar).
+
+### Automated Parking
+
+El laboratorio Automated Parking de TI: un solo radar cubre una zona 2D de
+largo alcance (hasta 50 m) y otra 3D de corto alcance (hasta 10 m, con la
+altura de cada punto) mediante dos subtramas. Graba `xwr18xx_mmw_demo_boost.bin` desde las
+Releases y ejecuta el cliente `urad-parking` de urad-mmwave:
+
+```bash
+urad-parking --config applications/automated_parking/config_radar.json --gui
+```
+
+Véase [`applications/automated_parking/`](applications/automated_parking).
 
 ## Recursos de Texas Instruments
 

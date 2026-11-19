@@ -8,6 +8,7 @@ are not stored in the git history.
 |---|---|---|
 | `out_of_box_1843_isk.bin` | Out-of-box demo & Short Range Radar | Point cloud streaming; used with [urad-mmwave](https://github.com/urad-by-Anteral/urad-mmwave-core) |
 | `xwr18xx_mrr_demo.bin` | [Medium Range Radar](../applications/medium_range_radar) | TI Radar Toolbox 4.00.00.05 prebuilt binary, unmodified; compiled-in MRR (120 m) + USRR (30 m) configuration, used with `urad-mrr` |
+| `xwr18xx_mmw_demo_boost.bin` | [Automated Parking](../applications/automated_parking) | TI Radar Toolbox 4.00.00.05 prebuilt binary for the AWR1843BOOST antenna layout, unmodified; used with `urad-parking` |
 
 ## Flashing
 
