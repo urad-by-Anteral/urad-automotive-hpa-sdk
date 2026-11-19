@@ -45,6 +45,8 @@ The application keeps the standard out-of-box firmware and implements the
 zone logic on the host — simple to modify, and the same firmware serves the
 general point cloud demo. (TI's own *Short Range Radar* lab uses a
 dedicated firmware with on-chip clustering and tracking on the AWR1642.)
+The same client serves the uRAD Automotive with its own chirp
+configuration.
 
 ## 2. Required firmware
 
