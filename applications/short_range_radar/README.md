@@ -131,10 +131,30 @@ and **yellow** for the farthest. Close the window to stop the radar.
 
 [`config_radar.json`](config_radar.json) sets the serial ports and points
 to [`chirp_config/short_range_radar.cfg`](chirp_config/short_range_radar.cfg),
-a regular out-of-box configuration: start frequency 77 GHz, slope
-20 MHz/µs, 384 samples per chirp at 2 Msps (≈ 4 cm range resolution),
-1 Tx × 4 Rx, 32 chirps per frame, frame period 33.33 ms (30 fps), Doppler
-window ±4.55 m/s and static clutter removal disabled.
+a regular out-of-box configuration that uses the two **azimuth** TX of the
+HPA (TX0 and TX2) in TDM-MIMO with the 4 RX in line: 8 virtual antennas in
+azimuth, the high azimuth resolution that gives the product its name (TX1,
+the elevation one, is not used). The chirp is short so the 2-TX loop keeps
+a high maximum velocity:
+
+| Parameter | Value |
+|---|---|
+| Antennas | 2 Tx × 4 Rx (8 virtual antennas in azimuth, ≈ 15°) |
+| Chirp | 77.0 → 79.96 GHz, slope 50 MHz/µs, period 66.2 µs |
+| Sampling | 256 complex samples at 5 Msps (2.56 GHz sampled bandwidth) |
+| Range | up to 12 m, resolution 5.9 cm |
+| Radial velocity | ±7.2 m/s, resolution 0.46 m/s |
+| Frame | 32 loops × 2 Tx, 33.33 ms (30 fps) |
+| Static clutter removal | disabled |
+
+It was checked with the TI mmWave Sensing Estimator 2.5.1 (xWR1843,
+board xWR1843BOOST) with no out-of-bounds parameters.
+
+[`chirp_config/short_range_radar_1tx.cfg`](chirp_config/short_range_radar_1tx.cfg)
+keeps the configuration of the original Short Range Radar scripts (1 Tx ×
+4 Rx, ≈ 30° azimuth resolution, 20 MHz/µs, 384 samples at 2 Msps, 3.9 cm
+range resolution, ±4.55 m/s). Select it with
+`--chirp chirp_config/short_range_radar_1tx.cfg`.
 
 Before sending it, `urad-short-range-radar` rewrites two lines from the
 command line options, so the firmware only reports points inside the
